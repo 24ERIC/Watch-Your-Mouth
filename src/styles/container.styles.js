@@ -1,0 +1,1 @@
+export const sectionStyles = `px-3 my-32`

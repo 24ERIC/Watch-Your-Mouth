@@ -1,0 +1,1 @@
+export const sectionStyles = `px-4 mt-5`

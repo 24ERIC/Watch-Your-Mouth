@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Watch-Your-Mouth
+The project is made by Caleb Hairston, Eric (Linjun Zhou) and Joshua Burell. By implementing automated system powered by Twilio and Cohere, our project can gives you insight into how the message may sound before you send the impulsive tweet or text.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 😶Inspiration
+In recent years the number of cancellations has been at an all-time high, partly due to impulsive tweeting. To help our favorite rappers, politicians, and comedians who obviously should have used a sounding board, we have created a private messaging service that can give critical insights into how you may come off with 90% or greater accuracy. 
 
-## Available Scripts
+## 🧠What it does
+It was targeted at teenagers and people with mental illness, the most likely population segments to send an impulsive message(s) to prevent them from sending less than the thought-out message(s) during a stress-induced episode. Before you tweet or make a potentially risky post, text our open line to receive insights. In addition, this could be interpreted by people living with ASD (Autism Spectrum Disorder) to solve other people's messages to avoid misunderstandings and as a much-needed educational resource. 
 
-In the project directory, you can run:
+## 🚧How we built it
+First, we collect over 1100 messages through web scrapers and by hand. We then created a Python automation for sorting, dividing, and formatting as a CSV file. The information was divided into training and validation set at a 10:1 ratio. We then fed it through the Cohere NLP model. Our model passed our P value of 12.5%, thus validating our minimum standards for determining the 11 emotions + 3 Contexts. As we know, sms is more area accessible but less financial as the text still charges some people; we created a react webpage with the same functionality.  
 
-### `npm start`
+## 📱Challenges we ran into
+The Twilio service was experiencing multiple bugs preventing outgoing messages from being sent. Currently, we are running low on twillio credits.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🥇Accomplishments that we're proud of
+We are proud to work with an interdisciplinary team where half were first-time hackers, and the other half were non-computer science students. In addition, we put an extra amount of time into this project.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🍎What we learned
+We learned how to train and validate a learning model. 
 
-### `npm test`
+## 📝What's next for Watch your Mouth
+We hope to add more context identifier categories and the function to help you rewrite with the proper tone. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ## Website Link
+https://watchyourmouth.tech -->
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ✨Project Pictures
+![](Image/1.png)
+![](Image/2.jpg)
+![](Image/3.png)
+![](Image/4.jpg)
